@@ -7,7 +7,13 @@ Call DumpRegs
 Mov al,a 
 add al,b 
 Call DumpRegs
-Call ReadInt 
+Call ReadInt
+;;sign flag;;;
+Call DumpRegs
+Mov Eax, 5 
+sub Eax, 10
+Call DumpRegs
+Call ReadInt  
 Exit
 main ENDP
 END main 
